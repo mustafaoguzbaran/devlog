@@ -2,6 +2,7 @@ body {
     font-family: 'Nunito', sans-serif;
     background-color: #222 !important;
     color: #fff;
+    text-align: center !important;
 }
 header {
     background-color: #000;
@@ -97,4 +98,21 @@ nav a:hover {
     font-size: 24px;
     color: #000;
     opacity: 0.6;
+}
+.container {
+    margin-top: 20px;
+}
+.blog-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffa500 !important; 
+}
+.blog-content {
+    font-size: 1rem;
+    color: #fff !important;
+}
+.blog-content img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 10px 0;
 }

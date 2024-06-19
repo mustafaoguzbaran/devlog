@@ -1,0 +1,118 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #222 !important;
+    color: #fff;
+    text-align: center !important;
+}
+header {
+    background-color: #000;
+    color: #ffa500;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 24px;
+}
+nav {
+    background-color: #333;
+}
+nav a {
+    color: #ffa500 !important; 
+    background-color: transparent;
+    padding: 10px 15px;
+    transition: background-color 0.5s, color 0.5s;
+}
+nav a:hover {
+    color: #000 !important;
+    background-color: #ffa500;
+    border-radius: 5px;
+}
+.content, .card {
+    background-color: #ffa500 !important;
+    color: #000;
+    border: 1px solid #ffa500;
+    margin-bottom: 20px;
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.content.show, .card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.contact {
+    background-color: #000;
+    color: #ffa500;
+    text-align: center;
+}
+.footer {
+    padding: 10px;
+    background-color: #333;
+    text-align: center;
+    border-top: 1px solid #ffa500;
+    color: #fff;
+}
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #ffa500;
+    display: block;
+    margin: 20px auto;
+    border: #000 3px solid;
+}
+.developer-icon {
+    font-size: 30px;
+    color: #ffa500;
+}
+.skill-bar-container {
+    width: 80%;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px auto;
+}
+.skill-bar {
+    width: 0%;
+    height: 30px;
+    background-color: #ffa500;
+    border-radius: 8px;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 30px;
+    transition: width 2s;
+}
+.social-icons a {
+    color: #ffa500;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.5s;
+}
+.social-icons a:hover {
+    color: #ffcc00;
+}
+.icon-bottom-right {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #000;
+    opacity: 0.6;
+}
+.container {
+    margin-top: 20px;
+}
+.blog-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffa500 !important; 
+}
+.blog-content {
+    font-size: 1rem;
+    color: #fff !important;
+}
+.blog-content img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 10px 0;
+}

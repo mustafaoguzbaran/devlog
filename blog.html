@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mustafa Oğuz Baran - Tüm Bloglar</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="container-fluid">
+        <i class="fas fa-code developer-icon"></i> Mustafa Oğuz Baran - Tüm Bloglar
+    </header>
+    <nav class="nav justify-content-center bg-dark py-2">
+        <a href="mainpage.html" class="nav-link">Anasayfa</a>
+        <a href="#experience" class="nav-link">Deneyimlerim</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="#contact" class="nav-link">İletişim</a>
+    </nav>
+    <div id="all-blogs" class="container mt-4">
+        <div class="card">
+            <div class="card-body text-center">
+                <h5 class="card-title">Tüm Bloglar</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card show">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog Başlığı 1</h5>
+                        <a href="#" class="btn btn-dark">Oku</a>
+                        <i class="fas fa-blog icon-bottom-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card show">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog Başlığı 2</h5>
+                        <a href="#" class="btn btn-dark">Oku</a>
+                        <i class="fas fa-blog icon-bottom-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card show">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog Başlığı 3</h5>
+                        <a href="#" class="btn btn-dark">Oku</a>
+                        <i class="fas fa-blog icon-bottom-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card show">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog Başlığı 4</h5>
+                        <a href="#" class="btn btn-dark">Oku</a>
+                        <i class="fas fa-blog icon-bottom-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card show">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog Başlığı 5</h5>
+                        <a href="#" class="btn btn-dark">Oku</a>
+                        <i class="fas fa-blog icon-bottom-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card show">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog Başlığı 6</h5>
+                        <a href="#" class="btn btn-dark">Oku</a>
+                        <i class="fas fa-blog icon-bottom-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card show">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog Başlığı 7</h5>
+                        <a href="#" class="btn btn-dark">Oku</a>
+                        <i class="fas fa-blog icon-bottom-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card show">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog Başlığı 8</h5>
+                        <a href="#" class="btn btn-dark">Oku</a>
+                        <i class="fas fa-blog icon-bottom-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card show">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog Başlığı 9</h5>
+                        <a href="#" class="btn btn-dark">Oku</a>
+                        <i class="fas fa-blog icon-bottom-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card show">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog Başlığı 10</h5>
+                        <a href="#" class="btn btn-dark">Oku</a>
+                        <i class="fas fa-blog icon-bottom-right"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Mustafa Oğuz Baran. Tüm hakları saklıdır.</p>
+    </div>
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll('.card, .content');
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add('show');
+                } else {
+                    reveals[i].classList.remove('show');
+                }
+            }
+        }
+
+        window.addEventListener('scroll', reveal);
+
+        reveal();
+    </script>
+</body>
+</html>

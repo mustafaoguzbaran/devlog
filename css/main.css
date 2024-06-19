@@ -1,8 +1,11 @@
 body {
     font-family: 'Nunito', sans-serif;
     background-color: #222 !important;
-    color: #fff;
-    text-align: center !important;
+    color: #fff !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
 }
 header {
     background-color: #000;
@@ -43,13 +46,6 @@ nav a:hover {
     background-color: #000;
     color: #ffa500;
     text-align: center;
-}
-.footer {
-    padding: 10px;
-    background-color: #333;
-    text-align: center;
-    border-top: 1px solid #ffa500;
-    color: #fff;
 }
 .profile-pic {
     width: 150px;
@@ -101,6 +97,7 @@ nav a:hover {
 }
 .container {
     margin-top: 20px;
+    flex: 1;
 }
 .blog-title {
     font-size: 2rem;
@@ -115,4 +112,23 @@ nav a:hover {
     max-width: 100%;
     border-radius: 8px;
     margin: 10px 0;
+}
+
+.form-control, .btn {
+    border-radius: 5px;
+}
+.btn-primary {
+    background-color: #ffa500;
+    border-color: #ffa500;
+}
+.btn-primary:hover {
+    background-color: #ffcc00;
+    border-color: #ffcc00;
+}
+.footer {
+    padding: 10px;
+    background-color: #333;
+    text-align: center;
+    color: #ffa500;
+    border-top: 1px solid #ffa500;
 }

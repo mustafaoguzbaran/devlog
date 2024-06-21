@@ -1,9 +1,19 @@
+using devlog.Data.Concrete.EfCore;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+
+builder.Services.AddDbContext<DevlogContext>(options =>
+{
+    var config = builder.Configuration;
+    var connectionString = config.GetConnectionString("sql_connection");
+    options.UseSqlite(connectionString);
+});
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
